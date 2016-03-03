@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Freecodecamp code by mrthnmn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Freecodecamp code</h1>
+        <p>Code I&#39;ve written for FreeCodeCamp challenges</p>
+
+        <p class="view"><a href="https://github.com/mrthnmn/FreeCodeCamp_Code">View the Project on GitHub <small>mrthnmn/FreeCodeCamp_Code</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mrthnmn/FreeCodeCamp_Code/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mrthnmn/FreeCodeCamp_Code/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mrthnmn/FreeCodeCamp_Code">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>/*
+This function takes two arrays and returns an array
+with elements found only in one of the arrays
+(the symmetric difference of the arrays).
+*/
+function diff(arr1, arr2) {
+  var newArr = [];
+  var combinedArr = arr1.concat(arr2).sort();
+  // Same, same; but different.
+  for (i = 0; i &lt; combinedArr.length; i++); {
+    var iPlusOne = i + 1;
+    // console.log(combinedArr);
+    if (combinedArr[i] === combinedArr[iPlusOne]) {
+      combinedArr.splice([iPlusOne], 1);
+    } else
+      newArr.push(combinedArr[i]);
+  }
+  return newArr;
+}</p>
+
+<p>diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mrthnmn">mrthnmn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
